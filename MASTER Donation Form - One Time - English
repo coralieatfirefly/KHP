@@ -1,0 +1,771 @@
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-M8H4NQ');</script>
+<!-- End Google Tag Manager -->
+
+<script src="https://cdn.optimizely.com/js/2635440073.js"></script>
+<link rel="stylesheet" type="text/css" href="https://apps.kidshelpphone.ca/assets/MyFontsWebfontsKit/MyFontsWebfontsKit.css">
+
+<!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window,document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1852426928326438'); 
+fbq('track', 'PageView');
+</script>
+<noscript>
+<img height="1" width="1" 
+src="https://www.facebook.com/tr?id=1852426928326438&ev=PageView
+&noscript=1"/>
+</noscript>
+<!-- End Facebook Pixel Code -->
+
+
+<style>
+body, input, textarea, select, button, legend {
+ font-family: HelveticaNeueLTStd-Md, Arial, sans-serif;
+  font-size: 18px;
+}
+
+h2, h3, .revised-donation-layout h1 {
+    font-weight: normal;
+    color: #53565a;
+    font-size: 30px;
+ font-family: HelveticaRoundedLTStd-Bd, Arial, sans-serif;
+}
+   
+
+.revised-donation-layout h1 {
+  text-align: left!important;
+}
+
+#chkSendCardSpan {
+   display: none!important;
+}
+
+#divSendCardSection .button-group {
+  display: none;
+}
+
+.sidebar-caption {
+ font-size: 14px;
+font-style: italic;
+}
+
+.sidebar a {
+color: #F47B20;
+}
+
+.uc-tribute .cardList .card-image {
+  display: block!important;
+  height: auto!important;
+}
+.lang {
+float: right;
+margin: 0 20px;
+color: #53565a!important;
+font-weight: bold;
+}
+
+#page-donatethankyou #tabsarea td.leftcol, #page-donatethankyou #tabsarea td.rightcol{display:none;}
+
+#page-donatethankyou #frame {
+    max-width: 1170px!important;
+    width:100%!important;
+}
+#page-donatethankyou #page td.rightcol {
+    border-left: 0px solid #ffffff;
+}
+
+/*******************************
+Layout
+********************************/
+
+.wrapper, .revised-donation-layout #frame {
+ max-width: 1170px!important;
+ width:100%!important;
+ margin: 0 auto;
+}
+
+header { 
+padding: 20px 0;
+}
+
+#js-header img {
+  padding: 40px;
+  max-width:270px;
+}
+
+footer {
+padding: 40px 0;
+text-align: center;
+background-color: #0095c8;
+color: #fff;
+}
+
+footer a, footer a:hover {
+      color: #f47b20;
+}
+
+footer img {
+ margin-bottom: 20px;
+}
+
+
+/*******************************
+ Sidebar
+********************************/
+
+.sidebar {
+  width: 30%;
+  border-left: 3px solid #F1F2F2;
+  padding: 15px 10px; 
+  margin: 5px;
+}
+
+.revised-donation-layout .sidebar h2 {
+    font-size: 20px; 
+    color: #0095c8; 
+   padding: 0 10px;
+   margin: 25px 0;
+}
+
+.sidebar p {
+  line-height: 1.5;
+  padding: 0 10px;
+}
+
+.sidebar img {
+ display: block;
+ margin: 0 auto 10px;
+}
+
+.logo {
+  max-width: 225px; 
+  height: auto;
+}
+
+/*******************************
+ Nav buttons at top of page
+********************************/
+#donation-nav {
+  margin-bottom: 10px;
+}
+
+#donation-nav > section {
+padding-bottom: 16px;
+margin-bottom: 16px;
+}
+
+#donation-nav h2{ 
+   margin-top: 40px;
+}
+
+.nav-gift-type, .nav-notification {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style-type: none;
+    -webkit-box-pack: justify;
+    -moz-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.nav-gift-type li, .nav-notification li {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: #F3F3F4;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 31%;
+    height: 50px;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    transition: background-color 0.25s ease, color 0.5s ease;;
+}
+
+.nav-gift-type li a, .nav-notification li a {
+    display: block;
+    width: 100%;
+    padding: 15px 0;
+    text-align: center;
+    text-decoration: none;
+    color: #565656;
+}
+
+.nav-gift-type li:hover, .nav-gift-type li.active, .nav-notification li:hover, .nav-notification li.active {
+    background-color: #107DA9;
+}
+
+.nav-gift-type li:hover a, .nav-gift-type li.active a, .nav-notification li:hover a, .nav-notification li.active a, .nav-gift-type li:hover span, .nav-gift-type li.active span, .nav-notification li:hover span, .nav-notification li.active span {
+    color: #fff;
+}
+
+.nav-notification-wrapper {
+    margin-top: 35px;
+}
+
+.nav-gift-type li.active a::before, .nav-notification li.active a::before, .nav-gift-type li.active span::before, .nav-notification li.active span::before {
+    font-family: fontawesome;
+    content: '\f00c';
+    margin-right: 6px;
+    opacity: 0.85;
+}
+
+
+/*******************************
+ Artez element styling
+********************************/
+
+.revised-donation-layout #frame {
+    max-width: 1170px!important;
+    width:100%;
+}
+
+#mainContainer {
+width: 67%;
+}
+
+#article-content {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    padding-bottom: 50px;
+}
+
+#mainContainer > section {
+ border: none;
+}
+
+
+/*******************************
+ button overrides
+********************************/
+.amount-other label {
+  display: none!important;
+}
+
+.button, button, input[type='submit'], input[type='button'], .button, .revised-donation-layout #ctl00_ctl00_mainContent_bodyContentPlaceHolder_btnConfirm {
+    color: #565656;
+    background-color: #F3F3F4;
+    border-color: #F3F3F4;
+   -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    border-style: none;
+    padding: 5px 15px;
+    height: 50px;
+   transition: background-color 0.5s ease;
+}
+
+
+.revised-donation-layout #ctl00_ctl00_mainContent_bodyContentPlaceHolder_btnConfirm {
+  float: left;
+}
+
+#tbCustomDonationAmount {
+   height: 50px;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+}
+button:hover, button:active, input[type='submit']:hover, input[type='submit']:active, input[type='button']:hover, input[type='button']:active, .button:hover, .button:active, button.selected, .button.selected, button[data-state="active"], .button[data-state="active"], input[type='submit'], input[type='button'] {
+background-color: #107DA9;
+}
+
+.revised-donation-layout .button.block, .revised-donation-layout button.block, .revised-donation-layout input[type="button"].block, .revised-donation-layout input[type="submit"].block {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    clear: both;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-radius: 0;
+}
+
+.right {
+  float: none;
+}
+
+.text-center {
+  text-align: left;
+}
+
+.revised-donation-layout .button.block, .revised-donation-layout button.block, .revised-donation-layout input[type="button"].block, .revised-donation-layout input[type="submit"].block {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    clear: both;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.revised-donation-layout .button, .revised-donation-layout button, .revised-donation-layout input[type="button"], .revised-donation-layout input[type="submit"] {
+  margin-right: 3%;
+  border-radius: 0;
+}
+
+.revised-donation-layout button.split-button, #donationType button {
+   margin-right: .5%;
+}
+
+
+
+
+/*******************************
+ form overrides
+********************************/
+
+.revised-donation-layout h2, .revised-donation-layout h3 {
+   margin: 35px 0;
+}
+
+#mainContainer > section#donation-info {
+  margin: 40px 0 -20px;
+}
+
+#txtAddress1 {
+margin-top: -30px;
+}
+
+#lblMessageOnCard, .message-to-charity {
+ display: none;
+}
+
+.revised-donation-layout input[type="text"], .revised-donation-layout input[type="color"], .revised-donation-layout input[type="date"], .revised-donation-layout input[type="datetime"], .revised-donation-layout input[type="datetime-local"], .revised-donation-layout input[type="email"], .revised-donation-layout input[type="month"], .revised-donation-layout input[type="number"], .revised-donation-layout input[type="range"], .revised-donation-layout input[type="search"], .revised-donation-layout input[type="tel"], .revised-donation-layout input[type="time"], .revised-donation-layout input[type="url"], .revised-donation-layout input[type="week"], .revised-donation-layout select, .revised-donation-layout textarea {
+  border-radius: 0;
+}
+
+.revised-donation-layout .button:hover, .revised-donation-layout button:hover, .revised-donation-layout input[type="button"]:hover, .revised-donation-layout input[type="submit"]:hover, .revised-donation-layout .button:focus, .revised-donation-layout button:focus, .revised-donation-layout input[type="button"]:focus, .revised-donation-layout input[type="submit"]:focus {
+    transform: none;
+}
+
+.uc-tribute input[type=checkbox] {
+  vertical-align: top;
+  margin-top: 3px;
+}
+
+.uc-tribute [for="checkboxFutureEcardDelivery"] {
+  margin-top: -5px!important;
+  width: 95%;
+}
+
+/*****************************
+ hide elements on confirmation and
+ thank you pages
+*****************************/
+
+#page  #donation-nav {
+  display: none;
+}
+
+#mainContainer > section#payment-info {
+    border-bottom: 1px solid #dddddd;
+}
+
+
+
+#ctl00_ctl00_mainContent_bodyContentPlaceHolder_btnCancel { 
+   display: none;
+}
+
+#next {
+    background-color: #f3f3f4;
+    color: #565656;
+}
+#next:hover, #next:focus {
+  background-color: #107DA9;
+  color: #fff;
+}
+/*****************************
+remodal styling
+*****************************/
+.remodal-close {
+    background: rgba(0, 0, 0, .95) none repeat scroll 0 0!important; 
+    color: #ffffff!important;
+    height: 35px!important;
+    padding: 0!important;
+   border-radius:20px!important;
+    transition: color 0.2s ease 0s!important;
+}
+
+.remodal-close::before {
+    content: "×"!important;
+    font-family: Arial,"Helvetica CY","Nimbus Sans L",sans-serif!important;
+    font-size: 25px!important;
+    line-height: 35px!important;
+    padding-right: 0px!important;
+    text-align: center!important;
+}
+.remodal-close, .remodal-close::before {
+    display: block!important;
+    left: -10!important;
+    position: absolute!important;
+    top: -10!important;
+    width: 35px!important;
+}
+.remodal-confirm {
+    background: #007da7 none repeat scroll 0 0!important;
+    color: #fff!important;
+    font-size: 22px!important;
+    font-weight: bold!important;
+    padding: 12px 20px!important;
+    height: auto!important;
+}
+.remodal-close {
+left: auto!important;
+right: -15px!important;
+top: -15px!important;
+}
+#sectionSurveyQuestions {display:none;}
+
+/*****************************
+rollback revisions
+*****************************/
+input[type=checkbox] + label {
+  display: inline;
+}
+
+.revised-donation-layout select {
+    width: 100%;
+}
+#page-donationpage .credit-card-details .col-md-4 {
+    width: 33.3333333333%;
+    padding-right: 15px;
+    float: left;
+}
+
+#page-donationpage .revised-donation-layout #pnSuggestedDonationAmounts ul .last-custom-suggested-amount #tbCustomDonationAmount {
+    height: 50px !important;
+    width: 100% !important;
+}
+/*****************************
+Mobile Styles (Updated 6.26.17 by FF Partners)
+*****************************/
+@media (max-width: 1120px) { 
+    .revised-donation-layout #mainContainer {
+        margin: 0;
+        padding: 10px 1%;
+    }
+    #mainContainer {
+        width: 68%;
+    }
+    .nav-gift-type li, .nav-notification li {
+        width: 32%;
+    }
+}
+@media (max-width: 1024px) {
+    #article-content {
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+    .revised-donation-layout #mainContainer {
+        padding: 10px 20px;
+    }
+    #mainContainer, .sidebar {
+        width: 100%;
+    }
+    .sidebar #promo-image {
+        display: none;
+    }
+}
+@media (max-width: 767px) {
+    .nav-gift-type, .nav-notification {
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    .nav-gift-type li, .nav-notification li {
+        width: 100%;
+        margin-bottom: 16px;
+    }
+}
+@media (max-width: 450px) {
+    #page-donationpage .credit-card-details .col-md-4 {
+        width: 50%;
+        padding-right: 15px;
+        float: left;
+    }
+    .remodal-close {
+        left: auto !important;
+        right: -8px !important;
+        top: -8px !important;
+    }
+    .remodal h1 {
+        margin-top: 0!important;
+    }
+    .remodal {
+        padding: 20px 30px!important;
+    }
+}
+</style>
+
+<script>
+
+$(document).ready(function() {
+    $('#js-sidebar').detach().appendTo('#article-content');
+    $('#header').remove();
+    $('#footer').remove();
+    $('#js-header').prependTo('body');
+    $('#js-footer').appendTo('body');
+    $('#donation-nav').prependTo('#mainContainer');
+    $('#tbCustomDonationAmount').attr('placeholder', 'Other amount');
+    $('#imagePageHeader').detach().prependTo('#js-sidebar');
+    $('#js-footer').detach().appendTo('body');
+
+//checks to see if value has been selected for donation amount radio group
+if (!$("input[name='ctl00$ctl00$mainContent$bodyContentPlaceHolder$ucDonationAmount$donation-amount']:checked").val()) {
+     $('.donation-amounts li:first-of-type input').prop('checked', true);
+}
+
+   $('#page-donatethankyou #frame').remove().appendTo('#js-header');
+
+   $('<h2>Recipient Details</h2>').insertBefore('.recipient-personal-donor');
+    $('#txtMessageOnCard').attr('placeholder', 'Optional card message');
+    $('#txtMessageOnCard').val('');
+    $('#ccMaster').detach().prependTo('.cc-type-icons');
+    $( "#js-notification-buttons li" ).click(function() {
+        $( "#js-notification-buttons li" ).removeClass('active');
+        $(this).addClass('active');
+     });
+
+$( "#js-no-card" ).click(function() {
+       $('#chkSendCard').prop('checked', false);
+       $('#divSendCardSection').hide();
+     });
+
+$( "#js-send-print-card" ).click(function() {
+       $('#chkSendCard').prop('checked', true);
+       $('#divSendCardSection').show();
+       $( "#buttonSendPrintCard" ).trigger( "click" );
+     });
+
+
+$( "#js-send-ecard" ).click(function() {
+       $('#chkSendCard').prop('checked', true);
+       $('#divSendCardSection').show();
+       $( "#buttonSendECard" ).trigger( "click" );
+     });
+
+$('#sectionSurveyQuestions h2').hide(); 
+$('#sectionSurveyQuestions .question').hide(); 
+$('#137139').hide();
+
+
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.0/remodal.min.js"></script>
+
+<script>
+//donation form hijack script
+$(function() {
+
+  var submitted;
+  var cancelled;
+
+var monthlyGiftMessage = '<div id="js-monthly-gift"><p>Your gift has been updated to a monthly recurring donation. Please correct the errors on the form to process your gift.</p></div>';
+
+  $('#Form1').on('submit', function(e) {
+
+    var donationAmtTxt;
+    var amt;
+    var usePayPal = $("#buttonPayPal").attr('data-state');
+    var payPal = false;
+
+    var userEnteredAmount = $('#tbCustomDonationAmount').val();
+
+      var cleanNumber = function(num) {
+        var N = Number(num);
+        if (parseFloat(num) === N)
+          return num;
+        return num.replace(/[^0-9.]/g, '') || '0';
+      }
+
+    /***French clean number
+
+  	var cleanNumber = function(num) {
+  		var editedAmountFr = num.replace(/[$]/g, '');
+  		editedAmountFr = editedAmountFr.replace(/[,]/g, '.');
+  		editedAmountFr = editedAmountFr.replace(/[ ]/g, '');
+
+  		return editedAmountFr;
+	}
+
+     ***/
+
+      if (userEnteredAmount === '') {
+        donationAmtTxt = $('.donation-amounts > li > label[data-state="active"]').text();
+      } else {
+        donationAmtTxt = $('#tbCustomDonationAmount').val();
+      }
+
+     if(usePayPal == 'active') {
+        payPal = true;
+     }
+
+      donationAmtTxt = cleanNumber(donationAmtTxt);
+
+     if ( donationAmtTxt >= 50 && donationAmtTxt <= 999.99 && !$('#137139_0').is(':checked') && !cancelled && !payPal ) { 
+         submitted = false; 
+      } else {
+        submitted = true;
+     }
+
+    if (!submitted) {
+
+      e.preventDefault();
+    
+ console.log('test');     
+ console.log(usePayPal);
+
+      $('js-monthly-gift').remove();
+
+      submitted = true;
+
+      var monthlyGift = Math.ceil(donationAmtTxt / 10);
+
+      if (monthlyGift >= 5) {
+        amt = monthlyGift;
+      } else {
+        amt = 5;
+      }
+
+      $('#js-suggested-amount').text('$' + amt);
+     //also remember to edit this for French version
+
+      var modal = $('[data-remodal-id=modal]').remodal();
+
+      modal.open();
+
+      /* This functionality is tied to Remodal functionality.
+       *  See for additional functionality: 
+       *  https://github.com/VodkaBears/Remodal */
+
+      $(document).on('confirmation', '.remodal', function() {
+
+        /* Functionality for updating form fields, etc. should be 
+         * entered here.*/
+
+       //make this a monthly donation
+       $('#137139_0').prop('checked', true);
+
+      //add monthly gift message to scree
+     $(monthlyGiftMessage).insertBefore('#donation-info');
+
+        //Update other amount field on donation form
+        $('#0').click(); //click to remove state on labels
+
+        $('#tbCustomDonationAmount').val('$' + amt);
+
+        //setTimeOut ensures form is submitted with updated information
+        setTimeout(function() {
+          $('#next').click();
+        }, 500);
+
+      });
+
+      /* This functionality is tied to Remodal functionality.
+       *  See for additional functionality: 
+       *  https://github.com/VodkaBears/Remodal */
+
+      $(document).on('cancellation', '.remodal', function() {
+        cancelled = true;
+        setTimeout(function() {
+          $('#next').click();
+        }, 500);
+      });
+
+     $(document).on('closed', '.remodal', function (e) {
+        cancelled = true;
+        setTimeout(function() {
+          $('#next').click();
+        }, 500);
+      });
+
+
+    }
+
+  });
+
+});
+</script>
+
+       <!--code below this line can be copied and pasted for a working donation form hijack-->
+
+	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.0/remodal.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.0/remodal-default-theme.min.css" />
+<style>
+a[data-remodal-action="cancel"] {color: #0095c8!important;cursor: pointer;}
+span#js-suggested-amount {display:inline;}
+</style>
+
+       
+	    <div class="remodal" data-remodal-id="modal">
+		  <button data-remodal-action="close" class="remodal-close"></button>
+		  <h1>MAKE IT MONTHLY!</h1>
+		  <p>Join Kids Help Phone as a member of <em>Always There</em>, our monthly giving program, and help kids every day of the year.</p>
+		  <p><strong>Would you like to make this a monthly gift of <span id="js-suggested-amount"></span>?</strong></p>
+		  <br>
+		  <!--Javascript is dependent on data-remodal-action. Do not remove!-->
+
+		  
+		  <button data-remodal-action="confirm" class="remodal-confirm">Yes, make my gift monthly.</button>
+                  <br /><br />
+
+		  <!--Buttons can easily be replaced with links as long as data-remodal-action is included-->
+		  <a data-remodal-action="cancel">No thanks, complete my one-time gift</a>
+		</div>
